@@ -1,8 +1,13 @@
+import Head from "./components/Head"
+import Side from "./components/Side"
+import style from './index.module.css'
+// import { Outlet } from 'react-router-dom'
 const Layout = () =>{
     return (
-        <>
-        <div>首页</div>
-        </>
+        <div className={style.layout}>
+        <Head></Head>
+        <Side></Side>
+        </div>
     )
 }
 export default Layout
